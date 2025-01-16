@@ -1,4 +1,4 @@
-/* Общие стили */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,7 +20,7 @@ body {
     border-radius: 20px;
     transition: background-color 0.03s ease;
 }
-/* Стили для шапки */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -60,7 +60,7 @@ body {
     background-color: #2C8A8A;
 }
 
-/* Стили для контента */
+
 .main-content {
     text-align: center;
     padding: 50px 20px;
@@ -82,7 +82,7 @@ body {
     text-transform: uppercase;
 }
 
-/* Стили для сетки */
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 3 колонки */
@@ -134,18 +134,18 @@ body {
     }
 }
 
-/* Адаптация для очень маленьких экранов */
+
 @media (max-width: 480px) {
     .site-title {
-        font-size: 16px; /* Ещё уменьшаем текст */
+        font-size: 16px; 
     }
 
     .donate {
-        font-size: 15px; /* Уменьшаем текст кнопки */
+        font-size: 15px; 
     }
 
     .grid-item img {
-        max-width: 100px; /* Сокращаем размер изображений */
+        max-width: 100px; 
     }
 
     .grid-item a {
