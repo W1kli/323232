@@ -1,0 +1,154 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #457677; 
+    color: #1ff153;
+}
+
+.styled1{
+    margin: -2px;
+    padding: 10px;
+    position: absolute;
+    top: 115px;
+    left: 25px;
+    float: right;
+    text-decoration: none;
+    color:rgb(2, 5, 8);
+    background-color:#19c444;
+    border: 1px solid #00000000;
+    border-radius: 20px;
+    transition: background-color 0.03s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #039ef8;
+    border-bottom: 5px solid #000000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.site-title {
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.donate {
+    background-color: #1c9092;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 200px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.donate-button:hover {
+    background-color: #2C8A8A;
+}
+
+
+.main-content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.breadcrumb {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.breadcrumb-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.page-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Стили для сетки */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    padding: 0px;
+}
+
+.grid-item  {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 300px;
+    height: 340px;
+    object-fit: auto; 
+    margin-bottom: 50px;
+    transition: transform 0.5s; 
+}
+
+
+.grid-item img:hover {
+    transform: scale(1.2) rotate(20deg);
+}
+
+.grid-item a {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    color: #1ff153;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .donate {
+        margin-top: 10px;
+        width: 100%; 
+    }
+
+    .page-title {
+        font-size: 24px; 
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 16px; 
+    }
+
+    .donate {
+        font-size: 15px; 
+    }
+
+    .grid-item img {
+        max-width: 100px; 
+    }
+
+    .grid-item a {
+        font-size: 14px;
+    }
+}
